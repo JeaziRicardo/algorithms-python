@@ -1,4 +1,3 @@
-# baseado no course
 def merge_sort(left, right, string):
     char_list = list(string)
     left_part, right_part = 0, 0
@@ -22,7 +21,6 @@ def merge_sort(left, right, string):
 
 
 def split_string(string):
-    # dividindo strings
     if len(string) < 2:
         return string
 
@@ -34,15 +32,12 @@ def split_string(string):
 
 
 def is_anagram(first_string, second_string):
-    # convertendo strings para lowercase para ser case insensitive
     first_string = first_string.lower()
     second_string = second_string.lower()
 
-    # atribuindo a uma variável
     sorted_first_string = split_string(first_string)
     sorted_second_string = split_string(second_string)
 
-    # verificando se as strings são anagramas
     if not sorted_first_string or not sorted_second_string:
         return (sorted_first_string, sorted_second_string, False)
 
